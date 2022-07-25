@@ -8,7 +8,7 @@ body{
 	padding: 0;
 }
 
-nav{
+.navbar{
 	position: relative;
 	top: 0;
 	left: 0;
@@ -21,13 +21,13 @@ nav{
 	align-items: center;
 }
 
-ul{
+.list{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 }
 
-a{
+.list-link{
 	text-decoration: none;
 	color: var(--fg-green);
 	font-size: 20px;
@@ -36,11 +36,11 @@ a{
 	font-weight: bold;
 }
 
-a:hover{
+.list-link:hover{
 	text-decoration: underline;
 }
 
-li{
+.list-item{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -52,6 +52,6 @@ li{
 }
 
 .logo{
-	width: 200px;
-	padding: 15px;
+	margin: 10px;
+	fill: var(--bg-green);
 }
