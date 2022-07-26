@@ -58,5 +58,5 @@ body{
 }
 
 .foglia{
-fill: var(--chiaro);
+	fill: var(--chiaro);
 }
