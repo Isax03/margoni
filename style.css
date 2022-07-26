@@ -53,5 +53,9 @@ body{
 
 .logo{
 	margin: 10px;
-	fill: var(--bg-green);
+	fill: white;
+}
+
+.foglia{
+fill: var(--bg-green);
 }
