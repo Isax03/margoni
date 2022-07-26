@@ -60,3 +60,15 @@ body{
 .foglia{
 	fill: var(--chiaro);
 }
+
+.foo{
+    position: fixed;
+	bottom: 0;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.test{
+	height: 100vh;
+	background: red;
+}
