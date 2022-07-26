@@ -1,6 +1,7 @@
 :root{
-	--fg-green: #80cd29;
-	--bg-green: #163919;
+	--chiaro: #80cd29;
+	--scuro: #163919;
+	--bianco: #f6f6f6;
 }
 
 body{
@@ -15,7 +16,7 @@ body{
 	right: 0;
 	margin: 0;
 	padding: 0;
-	background: var(--bg-green);
+	background: var(--scuro);
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -29,7 +30,7 @@ body{
 
 .list-link{
 	text-decoration: none;
-	color: var(--fg-green);
+	color: var(--chiaro);
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	margin: 0 10px;
@@ -57,5 +58,5 @@ body{
 }
 
 .foglia{
-fill: var(--fg-green);
+fill: var(--chiaro);
 }
