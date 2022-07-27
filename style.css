@@ -14,13 +14,14 @@ body{
 	margin: 0;
 	height: 100vh;
 	width: 100%;
-	background-image: url(https://s1.1zoom.me/b5449/743/Agricultural_machinery_Fields_2011-17_Claas_Axion_532445_1920x1080.jpg); 
+	background-image: url(https://s1.1zoom.me/b5449/743/Agricultural_machinery_Fields_2011-17_Claas_Axion_532445_1920x1080.jpg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); 
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-blend-mode: overlay;
 }
 
 .navbar{
-	position: relative;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -71,12 +72,116 @@ body{
 	fill: var(--chiaro);
 }
 
-.v{
+.prodotti{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 50px;
+	width: 100%;
+	height: auto;
+	background-color: var(--bianco);
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+
+.aromi{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: 100px;
-	background-color: var(--chiaro);
+}
+
+.icon{
+	background: var(--scuro);
+	border-radius: 100%;
+	aspect-ratio: 1;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nome{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: var(--bianco);
+}
+
+.icon-logo{
+	margin-top: 25%;
+	fill: var(--chiaro);
+	width: 50px;
+	aspect-ratio: 1;
+}
+
+#salvia:hover{
+	background: url(https://autosufficienza.it/wp-content/uploads/2016/04/salvia.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;	
+}
+
+#basilico:hover{
+	background: url(https://quandosipianta.it/wp-content/uploads/2020/03/Quando-si-pianta-il-Basilico.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#rosmarino:hover{
+	/* background: url(https://www.ilpanificiodicamillo.it/wp-content/uploads/Carattteristiche-Proprieta-Rosmarino-Aroma-Focaccia.jpg); */
+	background: url(https://www.cifo.it/cifols/wp-content/uploads/rosmarino.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#aromi-misti:hover{
+	background: url(img/erbe_aromatiche-0.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#menta:hover{
+	background: url(https://lasaponaria.kleecks-cdn.com/wp-content/uploads/2017/01/menta-immagine.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#cipollina:hover{
+	background: url(https://www.ortodacoltivare.it/wp-content/uploads/2015/01/cipollina.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#prezzemolo:hover{
+	background: url(https://www.faidateingiardino.com/wp-content/uploads/2017/02/prezzemolo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+#fiori:hover{
+	background: url(https://www.ortodacoltivare.it/wp-content/uploads/2015/03/PumpkinFlower-e1592173653100.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: ease-in 0.5s all;
+}
+
+.icon:hover .icon-logo{
+	position: relative;
+	top: -9999px;
+}
+
+.icon:hover .nome{
+	transform: translateY(65px);
+	color: black;
+	transition: ease-in 0.5s all;
+}
+
+.icon:not(:hover){
+	transition: ease-out 0.5s all;
 }
