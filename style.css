@@ -1,6 +1,6 @@
 :root{
 	--chiaro: #80cd29;
-	--scuro: #163919;
+	--scuro: red/*#163919*/;
 	--bianco: #f6f6f6;
 }
 
