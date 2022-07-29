@@ -15,7 +15,7 @@ body{
 	margin: 0;
 	height: 100vh;
 	width: 100%;
-	background-image: url(https://s1.1zoom.me/b5449/743/Agricultural_machinery_Fields_2011-17_Claas_Axion_532445_1920x1080.jpg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); 
+	background-image: url(https://s1.1zoom.me/b5449/743/Agricultural_machinery_Fields_2011-17_Claas_Axion_532445_1920x1080.jpg), linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: overlay;
@@ -185,7 +185,7 @@ body{
 }
 
 footer{
-	position: relative;
+	position: fixed;
 	bottom: 0;
 	background: var(--scuro);
 	color: var(--bianco);
@@ -199,4 +199,18 @@ footer{
 .contatti{
 	margin-left: 50px;
 	background: var(--bianco);
+}
+
+.contattaci{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.map iframe{
+	margin-top: 50px;
+	margin-left: 100px;
+	border: 3px solid var(--scuro);
+	border-radius: 10px;
 }
