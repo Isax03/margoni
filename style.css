@@ -46,10 +46,27 @@ body{
 	margin-top: 5px;
 }
 
+.logo{
+	margin: 10px;
+	fill: white;
+}
+
+.foglia{
+	fill: var(--chiaro);
+}
+
 .list{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+}
+
+.list-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 6px;
 }
 
 .list-link{
@@ -65,145 +82,6 @@ body{
 	text-decoration: underline;
 }
 
-.list-item{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	margin: 0 6px;
-}
-
-.logo{
-	margin: 10px;
-	fill: white;
-}
-
-.foglia{
-	fill: var(--chiaro);
-}
-
-.prodotti{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	row-gap: 50px;
-	width: 100%;
-	height: auto;
-	background-color: var(--bianco);
-	padding-bottom: 50px;
-	padding-top: 30px;
-}
-
-.aromi{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.icon{
-	background: var(--scuro);
-	border-radius: 100%;
-	aspect-ratio: 1;
-	width: 150px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	background-position: center;
-}
-
-.nome{
-	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: var(--bianco);
-}
-
-.icon-logo{
-	margin-top: 25%;
-	fill: var(--chiaro);
-	width: 50px;
-	aspect-ratio: 1;
-}
-
-#salvia:hover{
-	background: url(https://autosufficienza.it/wp-content/uploads/2016/04/salvia.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#basilico:hover{
-	background: url(https://quandosipianta.it/wp-content/uploads/2020/03/Quando-si-pianta-il-Basilico.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#rosmarino:hover{
-	/* background: url(https://www.ilpanificiodicamillo.it/wp-content/uploads/Carattteristiche-Proprieta-Rosmarino-Aroma-Focaccia.jpg); */
-	background: url(https://www.cifo.it/cifols/wp-content/uploads/rosmarino.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#aromi-misti:hover{
-	background: url(img/erbe_aromatiche-0.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#menta:hover{
-	background: url(https://lasaponaria.kleecks-cdn.com/wp-content/uploads/2017/01/menta-immagine.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#cipollina:hover{
-	background: url(https://www.ortodacoltivare.it/wp-content/uploads/2015/01/cipollina.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#prezzemolo:hover{
-	background: url(https://www.faidateingiardino.com/wp-content/uploads/2017/02/prezzemolo.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-#fiori:hover{
-	background: url(https://www.green.it/wp-content/uploads/2015/11/Green-Fiori-di-zucca-177871408L.jpg);
-	background-repeat: no-repeat;
-	background-size: 225px;
-	transition: ease-in 0.5s all;
-	background-position: center;
-}
-
-.icon:hover .icon-logo{
-	position: relative;
-	top: -9999px;
-}
-
-.icon:hover .nome{
-	transform: translateY(65px);
-	color: black;
-	transition: ease-in 0.5s all;
-}
-
-.icon:not(:hover){
-	transition: ease-out 0.5s all;
-}
 
 footer{
 	background: var(--scuro);
@@ -212,23 +90,4 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.contatti{
-	margin-left: 50px;
-	background: var(--bianco);
-}
-
-.contattaci{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-.map iframe{
-	margin-top: 50px;
-	margin-left: 100px;
-	border: 3px solid var(--scuro);
-	border-radius: 10px;
 }
