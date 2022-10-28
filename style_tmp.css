@@ -46,6 +46,7 @@ body{
 
 .foglia{
 	fill: var(--chiaro);
+	margin-right: 10px;
 }
 
 .container{
