@@ -1,0 +1,70 @@
+:root{
+	--chiaro: #8cc63e;
+	--scuro: #163919;
+	--bianco: #f6f6f6;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: var(--bianco);
+	user-select: none;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-header{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.navbar{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	background: var(--scuro);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.logo{
+	margin: 10px;
+	fill: white;
+	vertical-align: bottom;
+	margin-right: 50px;
+}
+
+.foglia{
+	fill: var(--chiaro);
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 150px;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	color: var(--scuro);
+}
+
+.subcontainer p{
+	font-size: 1.1em;
+	text-align: center;
+}
