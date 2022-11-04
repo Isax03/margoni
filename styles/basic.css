@@ -40,6 +40,9 @@ body{
 	margin-right: 50px;
 }
 
+.leaf-logo{
+	fill: var(--chiaro);
+}
 .foglia{
 	fill: var(--chiaro);
 }
