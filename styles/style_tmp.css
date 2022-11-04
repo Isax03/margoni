@@ -55,18 +55,6 @@ body{
 
 /* View from mobile max-width: 1000 and portrait*/
 @media screen and (max-width: 990px) and (orientation: portrait){
-	.navbar{
-		justify-content: center;
-		padding: 0;
-		height: fit-content;
-	}
-	.logo{
-		height: 152px;
-		width: 598px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		margin: 0;
-	}
 	.container{
 		height: fit-content;
 		font-size: 3rem;
