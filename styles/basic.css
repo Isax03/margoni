@@ -17,10 +17,6 @@ body{
 	margin: 0;
 	height: 100vh;
 	width: 100%;
-	background-image: url(https://s1.1zoom.me/b5449/743/Agricultural_machinery_Fields_2011-17_Claas_Axion_532445_1920x1080.jpg), linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)); 
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-blend-mode: overlay;
 }
 
 .navbar{
@@ -39,7 +35,7 @@ body{
 
 .logo{
 	margin: 10px;
-	fill: white;
+	fill: var(--bianco);
 	vertical-align: bottom;
 	margin-right: 50px;
 }
@@ -48,7 +44,7 @@ body{
 	fill: var(--chiaro);
 }
 
-.list{
+.menu-list{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -78,7 +74,6 @@ body{
 	color: var(--bianco);
 }
 
-
 footer{
 	position: relative;
 	bottom: 0;
@@ -95,51 +90,4 @@ footer.fix{
 }
 footer > p{
 	margin: 1rem;
-}
-
-.nav {
-	display: flex;
-	flex-direction: column;
-	min-width: 125px;
-	max-width: 200px;
-	position: relative;
-	top: 10px;
-}
-.nav-item{
-	min-width: 175px;
-}
-.nav-link{
-	width: auto;
-	display: flex;
-	align-items: center;
-	color: var(--scuro);
-	font-weight: 500;
-}
-.nav-pills .nav-link.active{
-	background-color: var(--scuro);
-	color: var(--bianco);
-	border-radius: 15px;
-	width: 175px;
-}
-
-.nav-link:hover{
-	color: var(--chiaro);
-}
-
-.container{
-	display: flex;
-	flex-direction: row;
-	column-gap: 100px;
-}
-.tab-content{
-	width: 935px;
-}
-
-.nav-link svg{
-	display: none;
-}
-.nav-link.active svg{
-	display: inline;
-	position: relative;
-	margin-right: 6px;
 }
